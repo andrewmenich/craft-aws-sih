@@ -1,0 +1,50 @@
+{
+    "name": "andrewmenich/craft-aws-sih",
+    "description": "A simple plugin that transforms images using AWS' Serverless Image Handler CloudFormation stack.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "aws sih"
+    ],
+    "support": {
+        "docs": "https://github.com/andrewmenich/craft-aws-sih/aws-sih/blob/master/README.md",
+        "issues": "https://github.com/andrewmenich/craft-aws-sih/aws-sih/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Menich",
+            "homepage": "https://github.com/andrewmenich"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "andrewmenich\\awssih\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "AWS SIH",
+        "handle": "aws-sih",
+        "developer": "Andrew Menich",
+        "developerUrl": "https://github.com/andrewmenich",
+        "documentationUrl": "https://github.com/andrewmenich/craft-aws-sih/aws-sih/blob/master/README.md",
+        "changelogUrl": "https://github.com/andrewmenich/craft-aws-sih/aws-sih/master/CHANGELOG.md",
+        "components": {
+            "transform": "andrewmenich\\awssih\\services\\Transform",
+            "helpers": "andrewmenich\\awssih\\services\\Helpers"
+        },
+        "class": "andrewmenich\\awssih\\AwsSih"
+    }
+}

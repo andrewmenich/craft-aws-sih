@@ -1,6 +1,6 @@
 # AWS SIH plugin for Craft CMS 3.x
 
-A simple plugin that transforms images using AWS' Serverless Image Handler CloudFormation stack.
+This is a fork of the [original plugin by dutchheight](https://github.com/dutchheight/aws-serverless-image-handler), which is currently inactive.
 
 ![Screenshot](resources/img/plugin-logo.png)
 
